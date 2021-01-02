@@ -230,7 +230,10 @@ func (bow *Browser) Open(u string) error {
 	if err != nil {
 		return err
 	}
-	return bow.httpGET(ur, nil)
+	err = bow.httpGET(ur, nil)
+	fmt.Println("LOCATION 1")
+	fmt.Println(err)
+	return err
 }
 
 // Head requests the given URL using the HEAD method.
@@ -637,6 +640,8 @@ func (bow *Browser) NewTab() (b *Browser) {
 func (bow *Browser) buildRequest(method, url string, ref *url.URL, body io.Reader) (*http.Request, error) {
 	req, err := http.NewRequest(method, url, body)
 	if err != nil {
+		fmt.Println("LOCATION 5")
+		fmt.Println(err)
 		return nil, err
 	}
 	req.Header = copyHeaders(bow.headers)
@@ -673,9 +678,14 @@ func copyHeaders(h http.Header) http.Header {
 func (bow *Browser) httpGET(u *url.URL, ref *url.URL) error {
 	req, err := bow.buildRequest("GET", u.String(), ref, nil)
 	if err != nil {
+		fmt.Println("LOCATION 4")
+		fmt.Println(err)
 		return err
 	}
-	return bow.httpRequest(req)
+	err = bow.httpRequest(req)
+	fmt.Println("LOCATION 2")
+	fmt.Println(err)
+	return err
 }
 
 // httpHEAD makes an HTTP HEAD request for the given URL.
@@ -710,6 +720,8 @@ func (bow *Browser) httpRequest(req *http.Request) error {
 	bow.preSend()
 	resp, err := bow.client.Do(req)
 	if err != nil {
+		fmt.Println("LOCATION 3")
+		fmt.Println(err)
 		return err
 	}
 	defer resp.Body.Close()

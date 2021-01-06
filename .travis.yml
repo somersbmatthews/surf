@@ -8,12 +8,12 @@ go:
   
 install:
   - go get github.com/PuerkitoBio/goquery
-  - go get github.com/headzoo/ut
+  - go get github.com/somersbmatthews/ut
   
 script:
  - go test -v ./...
  
 notifications:
   email:
-    - sean@headzoo.io
+    - sean@somersbmatthews.io
     

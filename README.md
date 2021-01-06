@@ -1,10 +1,10 @@
 Surf
 ====
 
-[![Build Status](https://img.shields.io/travis/headzoo/surf/master.svg?style=flat-square)](https://travis-ci.org/headzoo/surf)
-[![GoDoc](https://godoc.org/github.com/headzoo/surf?status.svg)](http://godoc.org/github.com/headzoo/surf)
+[![Build Status](https://img.shields.io/travis/somersbmatthews/surf/master.svg?style=flat-square)](https://travis-ci.org/somersbmatthews/surf)
+[![GoDoc](https://godoc.org/github.com/somersbmatthews/surf?status.svg)](http://godoc.org/github.com/somersbmatthews/surf)
 [![Documentation](https://img.shields.io/badge/documentation-readthedocs-blue.svg?style=flat-square)](http://surf.readthedocs.io/)
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/headzoo/surf/master/LICENSE.md)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/somersbmatthews/surf/master/LICENSE.md)
 
 Surf is a Go (golang) library that implements a virtual web browser that you control programmatically.
 Surf isn't just another Go solution for downloading content from the web. Surf is designed to behave
@@ -21,10 +21,10 @@ CSS selectors, scraping assets like images, stylesheets, and other features.
 
 ### Installation
 Download the library using go.
-`go get gopkg.in/headzoo/surf.v1`
+`go get gopkg.in/somersbmatthews/surf.v1`
 
 Import the library into your project.
-`import "gopkg.in/headzoo/surf.v1"`
+`import "gopkg.in/somersbmatthews/surf.v1"`
 
 
 ### Quick Start
@@ -32,7 +32,7 @@ Import the library into your project.
 package main
 
 import (
-	"gopkg.in/headzoo/surf.v1"
+	"gopkg.in/somersbmatthews/surf.v1"
 	"fmt"
 )
 
@@ -59,7 +59,7 @@ the [golang plugin](http://plugins.jetbrains.com/plugin/5047).
 
 Contributions have been made to Surf by the following awesome developers:
 
-* [Sean Hickey](https://github.com/headzoo)
+* [Sean Hickey](https://github.com/somersbmatthews)
 * [Haruyama Seigo](https://github.com/haruyama)
 * [Tatsushi Demachi](https://github.com/tatsushid)
 * [Charl Matthee](https://github.com/charl)
@@ -82,9 +82,9 @@ The idea to create Surf was born in [this Reddit thread](http://www.reddit.com/r
 ### Contributing
 Issues and pull requests are _always_ welcome.
 
-See [CONTRIBUTING.md](https://raw.githubusercontent.com/headzoo/surf/master/CONTRIBUTING.md) for more information.
+See [CONTRIBUTING.md](https://raw.githubusercontent.com/somersbmatthews/surf/master/CONTRIBUTING.md) for more information.
 
 
 ### License
 Surf is released open source software released under The MIT License (MIT).
-See [LICENSE.md](https://raw.githubusercontent.com/headzoo/surf/master/LICENSE.md) for more information.
+See [LICENSE.md](https://raw.githubusercontent.com/somersbmatthews/surf/master/LICENSE.md) for more information.

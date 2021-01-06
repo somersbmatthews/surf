@@ -1,6 +1,6 @@
 # surf
 --
-    import "github.com/headzoo/surf"
+    import "github.com/somersbmatthews/surf"
 
 Package surf ensembles other packages into a usable browser.
 

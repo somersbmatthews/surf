@@ -1,6 +1,6 @@
 # browser
 --
-    import "github.com/headzoo/surf/browser"
+    import "github.com/somersbmatthews/surf/browser"
 
 Package browser contains the primary browser implementation.
 
